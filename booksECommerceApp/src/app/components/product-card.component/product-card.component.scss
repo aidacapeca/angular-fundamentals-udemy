@@ -1,0 +1,35 @@
+.app-product-card-book-name{
+  color: #09958E;
+  margin-bottom: 0px;
+}
+
+.app-product-card-single-book-container{
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.app-product-card-author{
+  color: black;
+  font-size: 15px;
+}
+.app-product-card-isbn{
+ color: black;
+  font-weight: bold;
+}
+.app-product-card-description{
+  color: black;
+  font-size: 12px;
+}
+.app-product-card-price{
+  color: #09958E;
+}
+
+.app-product-card-regular-price-discount{
+  color: red;
+  text-decoration:line-through;
+}
+
+.app-product-card-out-stock-message{
+  color: red;
+  font-weight: bold;
+}
