@@ -1,4 +1,4 @@
-# Basic ecommerce apps
+# Basic ecommerce app
 Project developed while taking the **Angular fundamentals from scratch and unit testing** course from **Udemy**
 
 # How to run the project ? 
