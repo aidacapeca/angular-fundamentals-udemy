@@ -1,16 +1,16 @@
 <mat-card class="app-product-card-single-book-container">
-    <h1 class="app-product-card-book-name"> {{booksToDisplay.name}}</h1>
-    <span class="app-product-card-author">Written by: {{booksToDisplay.author}}</span>
-    <p class="app-product-card-isbn"> ISBN: {{booksToDisplay.id_isbn}}</p>
+    <h1 class="app-product-card-book-name"> {{productToDisplay.name}}</h1>
+    <span class="app-product-card-author">Written by: {{productToDisplay.author}}</span>
+    <p class="app-product-card-isbn"> ISBN: {{productToDisplay.id_isbn}}</p>
     <mat-card-content>
-      <p class="app-product-card-description">{{booksToDisplay.description}}</p>
-      <span [ngClass]="booksToDisplay.discount_available ? 'app-product-card-regular-price-discount' : 'app-product-card-price'">{{booksToDisplay.regular_price | currency:'USD': 'symbol-narrow'}}</span>
-      <span *ngIf='booksToDisplay.discount_available' class="app-product-card-price"> {{booksToDisplay.discount_price | currency:'USD': 'symbol-narrow'}} </span>
+      <p class="app-product-card-description">{{productToDisplay.description}}</p>
+      <span [ngClass]="productToDisplay.discount_available ? 'app-product-card-regular-price-discount' : 'app-product-card-price'">{{productToDisplay.regular_price | currency:'USD': 'symbol-narrow'}}</span>
+      <span *ngIf='productToDisplay.discount_available' class="app-product-card-price"> {{productToDisplay.discount_price | currency:'USD': 'symbol-narrow'}} </span>
     </mat-card-content>
     <ng-container *ngIf="checkAvailability() then stockAvailable else outStock"></ng-container>
   
     <ng-template #stockAvailable>
-      <mat-card-actions><button mat-raised-button color="primary" (click)="goToConfirmation(booksToDisplay)"> Add to cart</button></mat-card-actions>
+      <mat-card-actions><button mat-raised-button color="primary" (click)="goToConfirmation(productToDisplay)"> Add to cart</button></mat-card-actions>
     </ng-template>
     <ng-template #outStock>  <p class="app-product-card-out-stock-message"> Sorry! This product it's not available right now.</p> </ng-template>
   </mat-card>
