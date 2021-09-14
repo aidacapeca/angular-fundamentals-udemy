@@ -1,0 +1,6 @@
+<h2 mat-dialog-title>Your product was added to cart!</h2>
+<mat-dialog-content></mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Continue shopping</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click)="goToShoppingCart()">Go to shopping cart</button>
+</mat-dialog-actions>

@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header.component/header.component'
 import { ProductCardComponent } from './components/product-card.component/product-card.component';
 import { CheckoutDashboardComponent } from './screens/checkout-dashboard/checkout-dashboard.component';
 import { ProductDashboardComponent } from './screens/product-dashboard/product-dashboard.component';
+import { ConfirmationModalComponent } from './components/confirmation-modal/confirmation-modal.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProductDashboardComponent } from './screens/product-dashboard/product-d
     HeaderComponent,
     ProductCardComponent,
     CheckoutDashboardComponent,
-    ProductDashboardComponent
+    ProductDashboardComponent,
+    ConfirmationModalComponent
   ],
   imports: [
    //Angular
